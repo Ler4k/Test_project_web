@@ -1,0 +1,69 @@
+
+.wrapper{
+	margin-top: 30px;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+}
+.buttons{
+	width: 400px;
+	height: 200px;
+	background-color: black;
+}
+
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	margin-top: 17px;
+	display: flex;
+	align-items: flex-start;
+}
+.slider-nav.slick-track{
+	width: 300px;
+}
+
+/* Конкретный слайдер */
+.slider {
+	position: relative;
+	padding: 0px 1px;
+}
+
+@media (max-width:767px){
+	.slider {
+		
+	}
+}
+
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -30px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 60px;
+}
+.slider .slick-arrow.slick-prev{
+	background-color: white;
+	background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next{
+	background-color: white;
+	background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+}
+.slider__item {
+	padding: 0px 15px;
+}
+.slider__item img{
+	max-width: 100%;
+}
+

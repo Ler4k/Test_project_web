@@ -1,0 +1,60 @@
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+.myUL {
+    display: none;
+    z-index: 3;
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  background-color: lightgray;
+border-radius: 0 0 30px 30px;   
+}
+.active{
+    display: block;
+}
+.myUL li a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    div{
+        margin-right: 20px;
+    }
+}
+.myUL li a {
+  margin-top: -1px; /* Prevent double borders */ 
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  
+
+}
+
+.myUL li a:hover:not(.header) {
+    overflow: hidden;
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+@media screen and (max-width: 4000px) {
+  .myUL {
+  left: 21px;
+  top:-13px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .myUL {
+    left: 5px;
+    }
+}
